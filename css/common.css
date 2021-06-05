@@ -289,9 +289,34 @@
     align-items: center;
 }
 
+#header .inner .right .myname{
+    display: flex;
+    align-items: center;
+}
+
 #header .inner .right > div{
     margin-left: 20px;
     cursor: pointer;
+    position: relative;
+}
+
+#header .inner .right > div:after{
+    content: '';
+    width: 1px;
+    height: 18px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    margin-top: -9px;
+    background: var(--press-overlay);
+}
+
+#header .inner .right > div:last-child:after{
+    display: none;
+}
+
+#header .right .icon{
+    margin-right: 0;
 }
 
 #search{

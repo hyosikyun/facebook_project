@@ -115,6 +115,66 @@
                         </li>
                     </ul>
                 </div>
+
+                <section id="contents_container">
+                    <article class="create_box">
+                        <h2 class="title">게시물 만들기</h2>
+                        <div class="text_field">
+                            <form action="">
+                                <div class="top">
+                                    <div class="profile_img"><img src="imgs/profile/rang.jpg" alt=""></div>
+                                    <p>
+                                        <textarea name="content" id="text_field" cols="50" rows="5" data-name="add" placeholder="랑준이 무슨 생각을 하고 있니?"></textarea>
+                                    </p>
+                                </div>
+                                <div class="middle">
+                                    <canvas id="imageCanvas" width="0" height="0"></canvas>
+                                </div>
+                                <div class="bottom">
+                                    <input type="file" name="photo" id="id_photo" required>
+
+                                    <div class="import-btn">
+                                        <label for="id_photo" id="photo_label">
+                                            <span class="icon icon--picture"></span>
+                                            사진/동영상
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="submit">
+                                    <input type="submit" id="submitBtn" value="게시" disabled>
+                                </div>
+                            </form>
+                        </div>
+                    </article>
+                    <article class="contents">
+                        <header>
+                            <div class="profile_container">
+                                <div class="profile_img"><img src="imgs/profile/rang.jpg" alt=""></div>
+                                <div>
+                                    <div class="name"><a href="#">랑준</a></div>
+                                    <div class="time">1시간</div>
+                                </div>
+                                <div class="more" data-name="more">
+                                    <span class="icon--more"></span>
+                                    <ul class="hidden_menu">
+                                        <li>
+                                            <button>친구요청</button>
+                                        </li>
+                                        <li>저장하기</li>
+                                        <li><a href="edit.html">수정</a></li>
+                                        <li><input type="button" value="삭제"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="main_article">
+                            경리야~~~ 사랑한다 ~~~~~~
+                        </div>
+                        <div class="img_section">
+                            <a href="#"><img src="imgs/profile/rang.jpg" alt=""></a>
+                        </div>
+                    </article>
+                </section>
             </div>
         </section>
     </section>

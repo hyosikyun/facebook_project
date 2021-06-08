@@ -267,3 +267,88 @@
 .contents .img_section img{
     width: 100%;
 }
+
+.contents .ajax_field{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents .btn_container{
+    display: flex;
+    height: 42px;
+    border-top: 1px solid #dddfe2;
+    border-bottom: 1px solid #dddfe2;
+    margin: 0 10px;
+}
+
+.contents .btn_container > div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contents .btn_container > div:hover{
+    background: var(--fds-gray-10);
+}
+
+.contents .comment_container{
+    padding: 10px 20px;
+    color: var(--fds-fb-blue-75);
+}
+
+.contents .comment_container .id{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.contents .comment_container .text_container{
+    display: flex;
+    padding: 10px;
+    background: var(--fds-gray-05);
+    border-radius:30px;
+}
+
+.contents .comment_container .name{
+    margin-right: 5px;
+}
+
+.contents .comment_container .text_field{
+    color: var('--fds-gray-100');
+    font-weight: 300;
+}
+
+.contents .comment_input{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.contents .comment_input .input_container{
+    width: 100%;
+    padding: 7px 0;
+    background: var(--fds-gray-05);
+    border: 1px solid #ccd0d5;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+}
+.contents .input_container input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.contents .input_container button{
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

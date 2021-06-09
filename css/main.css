@@ -352,3 +352,99 @@
     transform: translateY(-50%);
     cursor: pointer;
 }
+
+#wrapper .right_box{
+    width: 308px;
+    background: #fff;
+    position: fixed;
+    right: 550px;
+    top: 52px;
+    border-radius: 3px;
+    padding-bottom: 20px;
+}
+
+.right_box .title{
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #616770;
+    border-bottom: 1px solid #dadde1;
+}
+
+.right_box .right_profile{
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    margin: 0 10px;
+}
+
+.right_box .profile_img{
+    width: 50px;
+    height: 50px;
+}
+
+.right_box .detail .name{
+    color: var(--fds-fb-blue-75);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.right_box .detail .message{
+    color: #90949c;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#side_box{
+    width: 205px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 52px;
+    border-left: 1px solid #dadde1;
+}
+
+#side_box > ul{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#side_box > ul > li{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+#side_box > ul > li:hover{
+    background: #dddfe2;
+    box-shadow: 1px 0 0 #eaebed inset;
+}
+
+#side_box .light{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgb(66, 183, 42);
+    margin-left: auto;
+}
+
+#side_box .profile_img{
+    width: 32px;
+    height: 32px;
+}
+
+
+@media screen and (max-width:1240px){
+    #wrapper{
+        padding-right: 0;
+        width: 90%;
+    }
+    
+    #contents_container{
+        position: static;
+        left: 0;
+        margin: 0 auto;
+    }
+}

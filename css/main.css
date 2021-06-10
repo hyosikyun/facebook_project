@@ -16,7 +16,7 @@
     height: 500px;
     position: fixed;
     top: 52px;
-    left: 300px;
+    /*left: 300px;*/
     font-size: 13px;
 }
 
@@ -120,11 +120,11 @@
     font-size: 15px;
 }
 
-.create_box .text-field .middle{
+.create_box .text_field .middle{
     
 }
 
-.create_box .text-field .bottom{
+.create_box .text_field .bottom{
     font-size: 12px;
     color: #4b4f56;
     font-weight: bold;

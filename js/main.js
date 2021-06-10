@@ -6,13 +6,13 @@ window.addEventListener('DOMContentLoaded',function(){
 
         console.log(rightBox);
 
-        leftBox.style.right = '${innerWidth * 0.5 + 430}px';
-        rightBox.style.left = '${innerWidth * 0.5 + 90}px';
+        leftBox.style.right = `${innerWidth*0.5 + 430}px`;
+        rightBox.style.left = `${innerWidth*0.5+ 90}px`;
 
         function resizeFunc(){
-            leftBox.style.right = '${innerWidth * 0.5 + 430}px';
-            rightBox.style.right = '${innerWidth * 0.5 + 90}px';
-            console.log('resize');
+            leftBox.style.right = `${innerWidth*0.5 + 430}px`;
+            rightBox.style.left = `${innerWidth*0.5+ 90}px`;
+            console.log(innerWidth);
         }
 
         function notification(){

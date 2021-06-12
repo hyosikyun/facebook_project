@@ -282,6 +282,10 @@
     margin: 0 10px;
 }
 
+.contents .btn_container .like_btn.active span {
+    background: url("../imgs/bg05.png")no-repeat 0 -422px;
+}
+
 .contents .btn_container > div{
     flex: 1;
     display: flex;
@@ -302,6 +306,11 @@
     display: flex;
     margin-bottom: 10px;
     align-items: center;
+}
+
+.contents .comment_container .delete{
+    margin-left: auto;
+    cursor: pointer;
 }
 
 .contents .comment_container .text_container{

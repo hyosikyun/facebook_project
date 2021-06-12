@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/new_post.js"></script>
 </head>
 
 <body>
@@ -132,8 +133,8 @@
                                 <div class="middle">
                                     <canvas id="imageCanvas" width="0" height="0"></canvas>
                                 </div>
-                                <div class="bottom">
-                                    <input type="file" name="photo" id="id_photo" required>
+                                <div class="botton">
+                                    <input type="file" name="photo" id="id_photo" required aceept="image/">
 
                                     <div class="import-btn">
                                         <label for="id_photo" id="photo_label">
@@ -225,6 +226,7 @@
                         </div>
 
                     </article>
+                    <input type="hidden" id="page" value="0">
                 </section>
 
                 <div class="right_box">

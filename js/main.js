@@ -21,13 +21,41 @@ window.addEventListener('DOMContentLoaded', function () {
         this.classList.toggle('on');
     }
 
+    function addMorePostAjax(data){
+        feed.insertAdjacentHTML('beforeend',data);
+    }
+
+    function callMorePostAjax(pageValue){
+        if (pageValue > 5) {
+            return;
+        }
+        $.ajax({
+            type:'POST',
+            url:'data/post.html',
+            data:pageValue,
+            dataType:'html',
+            success: addMorePostAjax,
+            error:()=>{
+                alert('문제가 발생했습니다.');
+            }
+        })
+    }
+
     function scrollFunc() {
         let documentHeight = document.body.scrollHeight;
-        let scrollHeight = pageXOffset + window.innerHeight;
+        let scrollHeight = pageYOffset + window.innerHeight;
 
         if (scrollHeight >= documentHeight) {
-            /* Ajax */
-            console.log('end');
+            let pager = document.querySelector('#page');
+            let pageValue = document.querySelector('#page').value;
+
+            pager.value = parseInt(pageValue) + 1;
+
+            callMorePostAjax(pageValue);
+
+            if (pageValue > 5) {
+                return;
+            }
         }
     }
 
